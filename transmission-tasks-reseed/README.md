@@ -158,4 +158,4 @@ Alternatively you can specify a "Spring Profile" to control which application-XX
 
     java -Dspring.profiles.active=WithLeechers -jar ossprj-transmission-tasks-reseed-x.y.z.jar
 
-will use the configuration from the application-HandleMissingAndIncomplete.yml file
+will use the configuration from the application-WithLeechers.yml file
