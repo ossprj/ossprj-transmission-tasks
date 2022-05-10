@@ -152,10 +152,10 @@ The default root logging level is WARN
 
 Ensure the application.yml is in the same directory from which you run the jar
 
-    java -jar ossprj-transmission-tasks-x.y.z.jar
+    java -jar ossprj-transmission-tasks-reseed-x.y.z.jar
 
 Alternatively you can specify a "Spring Profile" to control which application-XXX.yml file is used as the configuration file. The following:
 
-    java -Dspring.profiles.active=WithLeechers -jar ossprj-transmission-tasks-x.y.z.jar
+    java -Dspring.profiles.active=WithLeechers -jar ossprj-transmission-tasks-reseed-x.y.z.jar
 
 will use the configuration from the application-HandleMissingAndIncomplete.yml file
