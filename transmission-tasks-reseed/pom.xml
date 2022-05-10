@@ -8,7 +8,7 @@
     <parent>
         <groupId>com.ossprj.transmission</groupId>
         <artifactId>ossprj-transmission-tasks</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
 
     <dependencies>
@@ -33,7 +33,7 @@
         <dependency>
             <groupId>com.ossprj.transmission</groupId>
             <artifactId>ossprj-transmission-client</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>0.9.0</version>
         </dependency>
 
         <!-- Spring Boot -->
