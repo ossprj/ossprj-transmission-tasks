@@ -137,7 +137,7 @@ Otherwise, there is no reason to reseed a torrent.
 
 
 
-##Logging
+## Logging
 
 Logging levels can be overridden in the application-XXX.yml
 
@@ -148,7 +148,7 @@ The default root logging level is WARN
         root: WARN
         com.ossprj.transmission.task: DEBUG
 
-##Command Line
+## Command Line
 
 Ensure the application.yml is in the same directory from which you run the jar
 
