@@ -1,0 +1,21 @@
+# This Strategy only seeds torrents with 0 seeds and at least 1 leecher
+# Additionally, it prioritizes torrents with the highest number of leechers
+
+reseedTorrent:
+  endpoint: http://192.168.11.21:8084/transmission/rpc
+  maxActiveTorrents: 10
+  dryRun: true
+
+  predicates:
+    - name: LeecherCount
+      config:
+        minimum: 1
+    - name: SeederCount
+      config:
+        maximum: 0
+
+  comparators:
+    - name: LeecherCount
+      config:
+        sortOrder: DESCENDING
+

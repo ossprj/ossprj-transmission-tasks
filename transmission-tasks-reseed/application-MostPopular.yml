@@ -1,0 +1,17 @@
+# This strategy prioritizes torrents with the highest number of leechers
+
+reseedTorrent:
+  endpoint: http://192.168.11.21:8083/transmission/rpc
+  maxActiveTorrents: 10
+  dryRun: true
+
+  predicates:
+    - name: LeecherCount
+      config:
+        minimum: 1
+
+  comparators:
+    - name: LeecherCount
+      config:
+        sortOrder: DESCENDING
+
